@@ -1,0 +1,106 @@
+body {
+
+    background-color: #292929;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    max-width: 768px;
+    margin: 0 auto;
+  
+  }
+  
+  #calendar {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid white;
+  }
+  
+  .day {
+    display: inline-block;
+    width: 150px;
+    text-align: center; 
+    min-height: 100px; 
+  }
+  
+  
+  
+  h1 {
+
+    text-align: center; 
+    margin-top: 20px;
+    color: #ff8902;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #addMeeting {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  
+  } 
+  #addMeeting div { 
+    text-align: center;
+  
+  }
+  
+  input,
+  button {
+    background-color: #f37c2d;
+    color: rgb(41, 41, 41);
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  button {
+    color: black;
+  
+  }
+  
+  
+  
+  ::placeholder {
+    color: rgb(34, 34, 34);
+  
+  }
+  
+  
+  
+  .selected {
+    border: 1px solid white;
+  
+  }
+  
+  .selected h3 { 
+    font-weight: bolder;
+  }
+  
+  #appointments {
+    margin-top: 50px;
+    display: none;
+  
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  
+  }
+  
+  
+  
+  li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+  }
+  
+  
+  
+  .with-event {
+    color: #f37c2d;
+  
+  }
