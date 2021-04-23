@@ -10,15 +10,41 @@
 
 <body>
     <h1>Bingo</h1>
+    <div class="table">
+        <div id="bingo">
+        </div>
     <div>
         <button onclick="sortNumber()">Let's play</button>
     </div>
     <script>
-        const sortNumber = function () {
-            return Math.floor(Math.random() * 75) + 1;
-        };
-        console.log(sortNumber);
+         window.onload = function() {
+            let bingo = document.getElementById('bingo') 
 
+            for (i = 0; i<75; i++){
+                let cell = document.createElement('div') 
+                cell.classList.add('number') 
+                let number = document.createElement('h3') 
+                number.innerText = i + 1 
+                cell.appendChild(number) 
+                bingo.appendChild(cell) 
+            }
+        }
+
+
+
+        const sortNumber = function() { 
+            let max = 75
+            let min = 1
+            let randomNumber = Math.floor(Math.random()*(max-min+1)+min)
+            console.log(randomNumber)
+
+
+
+            let cells = document.getElementsByTagName('h3') 
+            cells[randomNumber-1].style.color= "yellow";
+
+        
+        }
     </script>
 </body>
 

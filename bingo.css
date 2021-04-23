@@ -1,42 +1,52 @@
+{
+    box-sizing: border-box;
+}
+
 body {
-
-    background-color: #25013d;
-    color: white;
+    background-color: rgb(64, 3, 134);
+    color: rgb(16, 1, 65);
     font-family: "Nunito", sans-serif;
-    max-width: 768px;
+    max-width: 90vw;
     margin: 0 auto;
-  
-  }
-  
-  button {
-    background-color: #350072;
-    color: rgb(236, 212, 255);
-    border: solid 2px white;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 10px;
+}
+
+#bingo {
+    width: 100%;
     margin-bottom: 20px;
-  
-  }
+}
 
-  card {
-    width: auto;
-    margin-bottom: 20px;
-    border: 1px solid white;
-  }
+.number {
+    display: inline-block;
+    background-color: rgb(230, 196, 250);
+    border: 1px solid rgb(2, 1, 66);
+    min-width: 75px;
+    text-align: center; 
+    min-height: 50px; 
+    
 
-  .box{
-    margin-top: 20px;
-    border: solid 1px rgb(83, 83, 83);
-    height: 50px;
-    width: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+} 
 
-    .row{
-        display: flex;
-        flex-direction: row;
-    }
+
+.holder {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-size: cover;
+}
+
+button {
+    background-color: rgb(42, 1, 63);
+    border: solid 2px rgb(163, 163, 255);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    
+
+}
+
+.number .selected {
+    background-color: rgba(17, 0, 253, 0);
+}
+h1{
+    color: tomato;
+}
